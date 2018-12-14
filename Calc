@@ -1,0 +1,26 @@
+#This programm is mt first calculator.
+
+
+
+def calculator(a,b,operation):
+if operation not in '+-*/':
+return 'I don't know how it's works!'
+
+if operation == '+':
+return (str(a) + ' ' + operation + ' ' + str(b) + '=' + str(a + b))
+if operation == '-':
+return (str(a) + ' ' + operation + ' ' + str(b) + '=' + str(a - b))
+if operation == '*':
+return (str(a) + ' ' + operation + ' ' + str(b) + '=' + str(a * b))
+if operation == '/':
+return (str(a) + ' ' + operation + ' ' + str(b) + '=' + str(a / b))
+
+
+
+def main():
+a = int(input('First number: '))
+b = int(input('Second number: '))
+operation = input('Operation is ')
+
+
+print (calculator(a,b,operation))
